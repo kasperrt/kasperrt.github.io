@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <input type="text" readonly id="letter_grade" placeholder="Letter Grade"/>
+    <input type="text" readonly id="final_grade" placeholder="Number Grade"/>
+    <button id="add_grade">+</button>
+    <form id="coolest_form">
+      <div id="grade_cont">
+        <div class="grade_cont_in">
+          Grade: <input class="grade" type="text" onkeydown="return gradesOnly(event);" required placeholder="grade" />
+          Points: <input class="point" type="number" placeholder="points" step="any" required />
+        </div>
+      </div>
+      <input type="submit" />
+    </form>
+    <script src="grade.js"></script>
+  </body>
+</html>
