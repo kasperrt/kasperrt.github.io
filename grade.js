@@ -39,7 +39,7 @@ function gradesOnly(event){
 }
 
 document.getElementById("add_grade").addEventListener("click", function(e){
-  document.getElementById("grade_cont").innerHTML += '<div class="grade_cont_in">Grade: <input class="grade" onkeydown="return gradesOnly(event);" required type="text" placeholder="grade" /> Points: <input type="number" placeholder="points" required step="any" /></div>';
+  document.getElementById("grade_cont").innerHTML += '<div class="grade_cont_in">Grade: <input class="grade" onkeydown="return gradesOnly(event);" required type="text" placeholder="grade" /> Points: <input type="number" placeholder="points" required step="7.5" /></div>';
 });
 
 document.getElementById("remove_grade").addEventListener("click", function(e){
