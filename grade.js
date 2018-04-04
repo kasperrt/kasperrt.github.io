@@ -21,7 +21,7 @@ document.getElementById("coolest_form").addEventListener("submit", function(e){
   var grades = document.getElementsByClassName("grade");
   var points = document.getElementsByClassName("point");
   for(x in grades) {
-    var g = list_grades[grades[x].value];
+    var g = list_grades[grades[x].value.toLowerCase()];
     var p = parseFloat(points[x].value);
     if(g != undefined && p != undefined){
       total_points = total_points + p;
