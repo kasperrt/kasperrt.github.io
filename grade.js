@@ -31,7 +31,7 @@ document.getElementById("coolest_form").addEventListener("submit", function(e){
     }
   }
   var result_grade_number = total_grade / total_points;
-  var result_grade_letter = list_grades[Math.ceil(result_grade_number).toString()];
+  var result_grade_letter = list_grades[Math.round(result_grade_number).toString()];
   document.getElementById("final_grade").value = result_grade_number;
   document.getElementById("letter_grade").value = result_grade_letter;
 });
