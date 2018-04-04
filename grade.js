@@ -16,6 +16,8 @@ var total_grade = 0;
 
 document.getElementById("coolest_form").addEventListener("submit", function(e){
   e.preventDefault();
+  total_points = 0;
+  total_grade = 0;
   var grades = document.getElementsByClassName("grade");
   var points = document.getElementsByClassName("point");
   for(x in grades) {
